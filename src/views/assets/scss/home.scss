@@ -1,77 +1,10 @@
-img {
-  display: block;
-  max-width: 100%;
-}
-
-body {
-  background: #1f1f1f;
-  color: #e0e0e0;
-  -webkit-font-smoothing: antialiased;
-  display: grid;
-  grid-template-columns: 1fr 120px minmax(300px, 1250px) 1fr;
-  font-family: 'Fira Code', monospace;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #BBAF97;
-  border-left: 4px solid #1f1f1f;
-  border-left: 4px solid #1f1f1f;
-}
-
-.menu {
-  grid-column: 3 / 5;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-  background: #BBAF97;
-}
-
-.menu ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-
-.menu li a {
-  display: block;
-  padding: 10px;
-  margin-right: 10px;
-  color: #222;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: .1em;
-  color: #1f1f1f;
-}
-
 .grid-section {
-  grid-column: 2 / 4;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
   display: grid;
-  grid-template-columns: 100px 500px 1fr;
+  grid-template-columns: 275px 600px 570px;
   grid-gap: 20px;
   margin-bottom: 5rem;
-}
-
-.material-section {
-  grid-column: 2 / 4;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 300px;
-  grid-gap: 20px;
-  margin-bottom: 5rem;
-}
-
-.material-section a {
-  color: #e0e0e0;
 }
 
 .grid-section-2 {
@@ -98,7 +31,6 @@ body::-webkit-scrollbar-thumb {
   -ms-transform: scale(2); /* IE 9 */
   -webkit-transform: scale(2); /* Safari and Chrome */
 }
-
 
 .title {
   font-family: 'Playfair Display SC', georgia;
@@ -196,6 +128,23 @@ body::-webkit-scrollbar-thumb {
   border-left: 4px solid #1f1f1f;
 }
 
+.material-section {
+  grid-column: 2 / 4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-gap: 20px;
+}
+
+.material-section a {
+  color: #e0e0e0;
+  &:hover {
+    color: #BBAF97;
+  }
+}
+
 .faq-list {
   grid-column: 2 / 4;
 }
@@ -228,63 +177,4 @@ body::-webkit-scrollbar-thumb {
 .faq-list dd {
   margin-bottom: .5rem;
   margin-left: 30px;
-}
-
-.tabcontent section {
-  display: none;
-}
-
-.tabcontent section.active {
-  display: block !important;
-  animation: show .5s forwards;
-}
-
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.accordion dd {
-  display: none;
-}
-
-.accordion dt::after {
-  content: '↴';
-  margin-left: 10px;
-}
-
-.accordion dt.active::after {
-  content: '↑';
-}
-
-.accordion dd.active {
-  display: block;
-  animation: slideDown .5s forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    max-height: 200px;
-    opacity: 1;
-  }
-}
-
-.scroll {
-  opacity: 0;
-}
-
-.scroll.active {
-  opacity: 1;
-  transition: .3s;
 }

@@ -1,45 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title class="title">Bug - Wiki</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style/reset.css">
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="stylesheet" href="../style/responsive.css">
-</head>
-<body>
-  <nav class="menu">
-    <ul>
-      <li><a href="../pages/index.html">Home</a></li>
-      <li><a href="../pages/bugs.html">Bugs</a></li>
-      <li><a href="../pages/materials.html">Materials</a></li>
-      <li><a href="https://github.com/distromari" target="_blank">Dev -></a></li>
-    </ul>
-  </nav>
+<template>
   <section class="grid-section bugs" id="bugs">
     <h1 class="title">Bug Wiki</h1>
     <h5 class="second-title">Home</h5>
     <h6 class="subtitle">Click on a diferent image to see a diferent description :)</h6>
     <ul class="bugs-list tabmenu">
       <li>
-        <img src="../img/bee1.jpg" alt="">
+        <img src="./assets/images/bee1.jpg" alt="">
       </li>
       <li>
-        <img src="../img/bug2.jpg" alt="">
+        <img src="./assets/images/bug2.jpg" alt="">
       </li>
       <li>
-        <img src="../img/butterflies1.jpg" alt="">
+        <img src="./assets/images/butterflies1.jpg" alt="">
       </li>
       <li>
-        <img src="../img/grasshopper1.jpg" alt="">
+        <img src="./assets/images/grasshopper1.jpg" alt="">
       </li>
       <li>
-        <img src="../img/ant1.jpg" alt="">
+        <img src="./assets/images/ant1.jpg" alt="">
       </li>
     </ul>
     <div class="bugs-description tabcontent">
@@ -114,26 +92,8 @@
       </section>
     </div>
   </section>
-  <section class="grid-section faq" id="faq">
-    <h1 class="title">FAQ</h1>
-    <dl class="faq-list accordion">
-      <dt>Who are the most famous naturalists?</dt>
-      <dd>
-        <ul>
-          <li>Charles Darwin</li>
-          <li>Jean-Baptiste Lamarck</li>
-          <li>Georges Cuvier</li>
-          <li>Florence Bailey</li>
-          <li>Maria Sibylla Merian</li>
-          <li>James Duncan</li>
-        </ul>
-      </dd>
-      <dt>who was James Duncan?</dt>
-      <dd>
-        James Duncan (1804–1861) was a Scottish naturalist. After his education in Edinburgh, he followed the family tradition to work in the Scottish church. He however retired and worked with publishing firms, and among other works helping produce an index of Encyclopaedia Britannica.
-      </dd>
-    </dl>
-  </section>
-  <script src="../scripts/index.js"></script>
-</body>
-</html>
+</template>
+  
+<style>
+@import '../../views/assets/scss/home.scss'
+</style>
