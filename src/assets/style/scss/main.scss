@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Serif:ital@0;1&display=swap");
+
+* {
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Libre Baskerville", serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e4d7be;
+  border-left: 4px solid #1f1f1f;
+  border-left: 4px solid #1f1f1f;
+}
+
+main {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.second-title {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  line-height: 1;
+  grid-column: 2 / 4;
+}
