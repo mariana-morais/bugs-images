@@ -13,7 +13,7 @@
         </li>
         <li>
           <a
-            href="https://github.com/marihemori"
+            href="https://github.com/mariana-morais"
             target="_blank"
             class="nav-link"
             >Dev -></a
